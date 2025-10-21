@@ -1,0 +1,131 @@
+{
+  "id": "UITransformationEngine",
+  "themeId": "",
+  "animationId": "",
+  "tabs": [
+    "arb.dashboard",
+    "arb.transfers",
+    "arb.payments.menu",
+    "arb.homeScreen"
+  ],
+  "moduleId": "FinanceMain",
+  "moduleTitle": "",
+  "moduleSubTitle": "",
+  "moduleElements": [
+    {
+      "id": "FinanceMainProductExplore",
+      "Component": "FinanceMainProductExplore",
+      "type": "Component",
+      "props": {
+        "list": [
+          "PF",
+          "Mortgage",
+          "AutoLease",
+          "Tharwa"
+        ],
+        "position": {
+          "x": 50,
+          "y": 100,
+          "width": 280,
+          "height": 120
+        }
+      }
+    },
+    {
+      "id": "QuickActionsWidget",
+      "Component": "QuickActionsBar",
+      "type": "Component",
+      "props": {
+        "actions": [
+          "transfer",
+          "pay",
+          "topup"
+        ],
+        "position": {
+          "x": 50,
+          "y": 250,
+          "width": 280,
+          "height": 80
+        }
+      }
+    }
+  ],
+  "enhancedData": [
+    {
+      "id": "nextBestAccount",
+      "props": {
+        "icon": "Icons.user.example",
+        "name": "Million Saving Account",
+        "action": "nl:true/direction:action/actionName:openNewMilionAccount",
+        "benefits": [
+          "Win up to 10% interest",
+          "Free Deposit",
+          "Free Withdrawal",
+          "Free Transfer"
+        ],
+        "position": {
+          "x": 50,
+          "y": 360,
+          "width": 280,
+          "height": 140
+        }
+      }
+    },
+    {
+      "id": "nextBestFinance",
+      "props": {
+        "icon": "Icons.user.example2",
+        "name": "Personal Finance (Watni I)",
+        "action": "nl:true/direction:action/actionName:appllyForFinance/keys:productId/values:SFN",
+        "benefits": [
+          "Benefit 1",
+          "Benefit 2",
+          "Benefit 3"
+        ],
+        "position": {
+          "x": 50,
+          "y": 530,
+          "width": 280,
+          "height": 130
+        }
+      }
+    },
+    {
+      "id": "nextBestCard",
+      "props": {
+        "icon": "Icons.user.example3",
+        "name": "Fursan Infinite",
+        "action": "nl:true/direction:action/actionName:appllyForCard/keys:cardBin/values:422689",
+        "benefits": [
+          "Benefit 1",
+          "Benefit 2",
+          "Benefit 3"
+        ],
+        "position": {
+          "x": 50,
+          "y": 690,
+          "width": 280,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "travelData",
+      "props": {
+        "contryCode": "EGP",
+        "currencyCode": "EGP",
+        "cardSerials": [
+          "1234567890123456",
+          "1234567890123457",
+          "1234567890123458"
+        ],
+        "position": {
+          "x": 200,
+          "y": 50,
+          "width": 150,
+          "height": 80
+        }
+      }
+    }
+  ]
+}

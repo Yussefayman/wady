@@ -1,0 +1,77 @@
+{
+  "id": "DashboardTransformation",
+  "themeId": "dark",
+  "animationId": "fade",
+  "tabs": [
+    "arb.home",
+    "arb.accounts",
+    "arb.cards"
+  ],
+  "moduleId": "Dashboard",
+  "moduleTitle": "Dashboard",
+  "moduleSubTitle": "Your Financial Overview",
+  "moduleElements": [
+    {
+      "id": "AccountsSummary",
+      "Component": "AccountsSummaryWidget",
+      "type": "Component",
+      "props": {
+        "showBalance": true,
+        "showGraph": true,
+        "position": {
+          "x": 20,
+          "y": 50,
+          "width": 335,
+          "height": 180
+        }
+      }
+    },
+    {
+      "id": "RecentTransactions",
+      "Component": "TransactionsList",
+      "type": "Component",
+      "props": {
+        "maxItems": 5,
+        "showIcons": true,
+        "position": {
+          "x": 20,
+          "y": 250,
+          "width": 335,
+          "height": 220
+        }
+      }
+    },
+    {
+      "id": "CardsCarousel",
+      "Component": "CardsCarouselWidget",
+      "type": "Component",
+      "props": {
+        "autoScroll": false,
+        "showDetails": true,
+        "position": {
+          "x": 20,
+          "y": 490,
+          "width": 335,
+          "height": 160
+        }
+      }
+    }
+  ],
+  "enhancedData": [
+    {
+      "id": "promotionalBanner",
+      "props": {
+        "title": "Summer Special Offer",
+        "description": "Get 5% cashback on all purchases",
+        "imageUrl": "https://example.com/banner.jpg",
+        "action": "nl:true/direction:action/actionName:viewOffer",
+        "position": {
+          "x": 20,
+          "y": 670,
+          "width": 335,
+          "height": 120
+        }
+      }
+    }
+  ]
+}
